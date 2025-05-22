@@ -52,11 +52,11 @@ public class SecurityConfig {
 
         if ("prod".equalsIgnoreCase(environment)) {
             System.out.println("Online checking:");
-            return new String[]{"https://trainingappbackend.deepseahost.com","https://trainingapp.deepseahost.com"};
+            return new String[]{"https://trainingapphrmbackend.deepseahost.com","https://trainingapphrm.deepseahost.com"};
         } else {
             System.out.println("local host checking:");
 
-            return new String[]{"http://localhost:3084"};
+            return new String[]{"http://localhost:3087"};
         }
     }
     @Bean

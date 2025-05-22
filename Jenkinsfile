@@ -4,15 +4,15 @@ pipeline {
     environment {
         PROD_HOST  = credentials('DO_HOST')
         PROD_USER  = credentials('DO_USER')
-        DEPLOY_DIR = '/www/wwwroot/CITSNVN/attendance/springbootuserservice'
+        DEPLOY_DIR = '/www/wwwroot/CITSNVN/hrmcrashcourse/backend'
         JAR_NAME   = 'userservice-1.0.jar'
-        PORT       = '3080'
+        PORT       = '3088'
     }
 
     stages {
         stage('Clone Repository') {
             steps {
-                git branch: 'main', url: 'https://github.com/Saddam-Hossen/AttendanceWebUserServiceMicroServiceBackend'
+                git branch: 'main', url: 'https://github.com/Saddam-Hossen/hrmTrainingAppbackend'
             }
         }
 
