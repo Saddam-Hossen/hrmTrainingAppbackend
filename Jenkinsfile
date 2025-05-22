@@ -5,7 +5,7 @@ pipeline {
         PROD_HOST  = credentials('DO_HOST')
         PROD_USER  = credentials('DO_USER')
         DEPLOY_DIR = '/www/wwwroot/CITSNVN/hrmcrashcourse/backend'
-        JAR_NAME   = 'userservice-1.0.jar'
+        JAR_NAME   = 'quizbackend-1.0.jar'
         PORT       = '3088'
     }
 
